@@ -1,21 +1,10 @@
-// Форма заявки (демо)
-const form = document.getElementById("contactForm");
-const message = document.getElementById("formMessage");
+const burger = document.getElementById("burger");
+const menu = document.getElementById("menu");
 
-form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    message.textContent = "Спасибо! Ваша заявка отправлена.";
-    message.style.color = "#c6a75e";
-
-    form.reset();
-});
-
-// Кнопки покупки
-const buyButtons = document.querySelectorAll(".buy-btn");
-
-buyButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        alert("Для оплаты свяжитесь с нами через форму заявки.");
-    });
+burger.addEventListener("click", () => {
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
 });
