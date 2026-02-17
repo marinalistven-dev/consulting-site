@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Strategic Consulting</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -12,7 +12,12 @@
 
 <nav>
     <div class="logo">Strategic Consulting</div>
-    <div class="menu">
+
+    <div class="burger" id="burger">
+        ☰
+    </div>
+
+    <div class="menu" id="menu">
         <a href="#services">Услуги</a>
         <a href="#why">Почему мы</a>
         <a href="#prices">Цены</a>
@@ -39,52 +44,15 @@
     <div class="cards">
         <div class="card">
             <h3>Стратегическая сессия</h3>
-            <p>Аудит бизнеса и разработка карты роста на 12–24 месяца.</p>
+            <p>Аудит бизнеса и разработка карты роста.</p>
         </div>
-
         <div class="card">
             <h3>Система управления</h3>
-            <p>Внедрение KPI, финансовой модели и управляемой структуры.</p>
+            <p>Внедрение KPI и финансовой модели.</p>
         </div>
-
         <div class="card">
             <h3>Масштабирование</h3>
             <p>Выход на новые рынки и оптимизация процессов.</p>
-        </div>
-
-        <div class="card">
-            <h3>Финансовая стратегия</h3>
-            <p>Рост маржинальности и управление денежным потоком.</p>
-        </div>
-
-        <div class="card">
-            <h3>Сопровождение собственника</h3>
-            <p>Индивидуальная стратегическая работа.</p>
-        </div>
-
-        <div class="card">
-            <h3>Цифровая трансформация</h3>
-            <p>CRM, автоматизация и систематизация маркетинга.</p>
-        </div>
-    </div>
-</section>
-
-<section id="why">
-    <h2>Почему мы</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Системный подход</h3>
-            <p>Работаем на уровне стратегии, процессов и финансов.</p>
-        </div>
-
-        <div class="card">
-            <h3>Измеримый результат</h3>
-            <p>Рост прибыли и масштабирование бизнеса.</p>
-        </div>
-
-        <div class="card">
-            <h3>Премиальный формат</h3>
-            <p>Индивидуальные решения под задачи собственника.</p>
         </div>
     </div>
 </section>
@@ -95,23 +63,23 @@
 
         <div class="card">
             <h3>Старт офлайн</h3>
-            <p>Управляемая система для роста прибыли и снижения рутины. Доступ к видеоурокам и материалам.</p>
+            <p>Система для роста прибыли и снижения рутины.</p>
             <div class="price">20 000 ₽</div>
-            <button class="btn buy-btn">Купить сейчас</button>
+            <button class="btn">Купить сейчас</button>
         </div>
 
         <div class="card highlight">
             <h3>Базовый+</h3>
-            <p>Система управления для увеличения доходов и освобождения времени. Обучение онлайн и офлайн.</p>
+            <p>Система управления для увеличения доходов.</p>
             <div class="price">100 000 ₽</div>
-            <button class="btn buy-btn">Купить сейчас</button>
+            <button class="btn">Купить сейчас</button>
         </div>
 
         <div class="card">
             <h3>ВИП+</h3>
-            <p>Индивидуальное сопровождение, промо-материалы, максимальное погружение.</p>
+            <p>Индивидуальное сопровождение и максимальное погружение.</p>
             <div class="price">250 000 ₽</div>
-            <button class="btn buy-btn">Купить сейчас</button>
+            <button class="btn">Купить сейчас</button>
         </div>
 
     </div>
@@ -119,19 +87,16 @@
 
 <section id="contact" class="cta">
     <h2>Связаться с нами</h2>
-
-    <form id="contactForm">
+    <form>
         <input type="text" placeholder="Ваше имя" required>
         <input type="email" placeholder="Email" required>
         <textarea placeholder="Сообщение" required></textarea>
         <button type="submit" class="btn">Отправить заявку</button>
     </form>
-
-    <p id="formMessage"></p>
 </section>
 
 <footer>
-    © 2026 Strategic Consulting. Все права защищены.
+    © 2026 Strategic Consulting
 </footer>
 
 <script src="script.js"></script>
